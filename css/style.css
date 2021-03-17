@@ -1,5 +1,20 @@
+body {
+  background-color: rgb(103, 58, 183);
+  color: rgb(238, 238, 238);
+  line-height: 1.6;
+}
 
-body {background-color: rgb(29, 96, 141);}
+header {
+  width: 100%;
+  height: 20vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header>h1 {
+  font-size: 4rem;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -7,20 +22,27 @@ body {background-color: rgb(29, 96, 141);}
   width: 30%;
 }
 
+img {
+  margin-bottom: 30px;
+  width: 40%;
+}
+
 p {
-  font-size: 150%;
+  font-size: 1.8rem;
   text-align: center;
 }
 
-
-ol {
-
-font-size: 120%;
-text-align: center;
+.titleSeries {
+  margin-top: 30px;
+  font-size: 2.3rem;
 }
 
-h3 {
+.list {
+  margin: 0 auto;
+  width: 320px;
+  margin-top: 40px;
+}
 
-font-size: 150%;
-text-align: center;
+ol {
+  font-size: 1.4rem;
 }
