@@ -15,11 +15,11 @@ header>h1 {
   font-size: 4rem;
 }
 
-<<<<<<< HEAD
+HEAD
 body {background-color: rgb(25, 95, 141);}
-=======
->>>>>>> 1700ea3af837a4241bf79863f97df84e58603b5a
-.center {
+
+
+center {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -32,7 +32,7 @@ img {
 }
 
 p {
-<<<<<<< HEAD
+
   font-size: 160%;
   text-align: center;
 }
@@ -46,24 +46,24 @@ ol {
 
 font-size: 120%;
 text-align: center;
-=======
+
   font-size: 1.8rem;
   text-align: center;
 }
 
-.titleSeries {
+titleSeries {
   margin-top: 30px;
   font-size: 2.3rem;
->>>>>>> 1700ea3af837a4241bf79863f97df84e58603b5a
+
 }
 
-.list {
+list {
   margin: 0 auto;
   width: 320px;
   margin-top: 40px;
 }
-
-<<<<<<< HEAD
+p
+{
 font-size: 150%;
 text-align: center;
 }
@@ -86,8 +86,7 @@ ol {
   margin: 20px;
 }
 
-=======
+
 ol {
   font-size: 1.4rem;
 }
->>>>>>> 1700ea3af837a4241bf79863f97df84e58603b5a
