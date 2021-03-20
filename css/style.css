@@ -24,3 +24,27 @@ h3 {
 font-size: 150%;
 text-align: center;
 }
+
+p {
+  font-family: 'Caveat', cursive;
+}
+h3 {
+  font-family: 'Caveat', cursive;
+}
+
+ol {
+  font-family: 'Caveat', cursive;
+}
+
+ol {
+  width: 300px;
+  border: 10px solid rgb(128, 0, 32);
+  padding: 50px;
+  margin: 20px;
+}
+
+ol {
+
+  font-size: 120%;
+  text-align: center;
+  }
