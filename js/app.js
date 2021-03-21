@@ -12,7 +12,6 @@ function q1()
 
   if (answer.toLowerCase()==='no'|| answer.toLowerCase() ==='n') {
 
-    Score++;
  
 
     score++;
@@ -116,9 +115,8 @@ function q6()
   let answer6;
 
  
-  let i=0;
-
   let i = 0;
+
 
 
   do {
@@ -172,8 +170,8 @@ function q7()
 
   do{
     answer7=prompt('Guess where I am living');
-    if (answer7===h[0]) {
-   answer7 = prompt('Guess where I am living? \nYou try ' + tryCount + '/6');
+    if (answer7===h[0])  {
+   answer7 = prompt('Guess where I am living?\n You try ' + tryCount + '/6');
 
     if (answer7.toUpperCase() === place[0]) {
 
@@ -194,7 +192,7 @@ function q7()
 
     
     k++;
-  }while( k!== 6 );
+  }while( k!==6 );
   alert('I live in'+h);
 
 
@@ -217,10 +215,8 @@ function questions()
   q4();
   q5();
   q6();
-  q7();
-  console.log('your score: ' + score +'/7');
-  alert('your score: ' + score +'/7');
-}
-
+  q7(); 
+  alert('your score: ' + score +'7');}
 questions();
+
 
