@@ -1,222 +1,152 @@
-'use strict';
+'use strict'
 
 let score = 0;
+let name =prompt('What is your name ?');
 
-let yname= prompt('what is your name ?');
+alert('your name is '+name+ ' you will play the guessing game');
 
-alert('Welcome '+yname);
 
-function q1()
+let reply=prompt('Do you think that I am living in Irbed ?');
+
+if (reply.toLowerCase() ===('no')||reply.toLowerCase() ===('n'))
 {
-  let answer=prompt('Do you think that I am Living in Irbed?');
-
-  if (answer.toLowerCase()==='no'|| answer.toLowerCase() ==='n') {
-
- 
 
     score++;
-    
-
-    alert('true');
-    alert('your answer is '+answer+' ,  yes I am living in the Capital');
-  } else {
- 
-    alert('false');
-    alert('you answer is '+answer + ' NO IAM NOT ');
-  }
+    alert(name+' your answer is correct ,you got a point');
 }
 
-function q2()
+else 
 {
-  let answer2=prompt('Do you think that I can Swim?');
+    alert(name+ ' Your answer is wrong !');
+}
 
-  if (answer2.toLowerCase()==='no'|| answer2.toLowerCase() ==='n') {
 
-    Score++;
-  
 
+////////
+
+
+let reply2=prompt('Do I prefer fishing or swimming ?');
+
+if (reply2.toLowerCase() === 'fishing')
+
+{
     score++;
-    console.log('true');
-
-    alert('true');
-    alert('your answer is '+answer2+'  You are right Unfortunately I am not good swimmer');
-  } else {
-   
-    alert('false');
-    alert('you answer is '+answer2 + ' Nope, Unfortunately I am not good swimmer ');
-  }
+    alert(name+' your answer is correct ,you got a point');
 }
 
-function q3()
+else 
 {
-  let answer3=prompt('Do you think that I Love Football?');
+    alert(name+ ' Your answer is wrong !');
+}
 
-  if (answer3.toLowerCase()==='yes'|| answer3.toLowerCase() ==='y') {
-
-    Score++;
+/////
 
 
+let reply3=prompt('Do I prefer summer or winter ?');
+
+if (reply3.toLowerCase() === 'summer')
+
+{
     score++;
-    console.log('true');
-
-    alert('true');
-    alert('your answer is '+answer3+'  You are right Unfortunately I am not good swimmer');
-  } else {
- 
-    alert('false');
-    alert('you answer is '+answer3 + ' Nope, Unfortunately I am not good swimmer ');
-  }
+    alert(name+' your answer is correct ,you got a point');
 }
 
-function q4()
+else 
 {
-  let answer4=prompt('Do you think that I have beard?');
+    alert(name+ ' Your answer is wrong !');
+}
 
-  if (answer4.toLowerCase()==='yes'|| answer4.toLowerCase() ==='y') {
+//////
 
-    Score++;
-  
 
+let reply4=prompt('Do I prefer Power Horse or Red Bull  ?');
+
+if (reply4.toLowerCase() === 'Red Bull')
+
+{
     score++;
-    console.log('true');
-
-    alert('true');
-    alert('your answer is '+answer4+'  You are right I have it But iam not Shiakh');
-  } else {
-  
-    alert('false');
-    alert('you answer is '+answer4 + ' Actually, I have a beard But Im not Shaikh ');
-  }
+    alert(name+' your answer is correct ,you got a point');
 }
 
-function q5()
+else 
 {
-  let answer5=prompt('Do you think that I can drive a truck?');
+    alert(name+ ' Your answer is wrong !');
+}
 
-  if (answer5.toLowerCase()==='no'|| answer5.toLowerCase() ==='n') {
+//////
 
-    Score++;
-  
 
+let reply5=prompt('Do I prefer A holiday on the -city- or in the -Island-  ?');
+
+if (reply5.toLowerCase() === 'island')
+
+{
     score++;
-    console.log('true');
-
-    alert('true');
-    alert('your answer is '+answer5+'  You are right I cant drive it ');
-  } else {
-  
-    alert('false');
-    alert('you answer is '+answer5 + ' Nope, Unfortunately I cant drive it ');
-  }
+    alert(name+' your answer is '+reply5+' and it is correct ,you got a point');
 }
 
-function q6()
+else 
 {
-  let answer6;
-
- 
-  let i = 0;
-
-
-
-  do {
-    i=i++;
-    answer6=Number(prompt('How old Do you think I am ? '));
-    if (answer6>32) {
-  
-      alert('You have guessed too high!');
-
-     
-      alert ('again') ;
-
-      alert ('again');
-
-    }
-    else if (answer6===32) {
-    
-      alert('true');
-      score++;
-      break;
-    }
-    else {
-    
-      alert('You have guessed too low!');
-
-    
-      alert ('again') ;
-
-      alert ('again');
-
-    }
-   
-    i++;
-  } while ( answer6 !== 23 && i<4);
-
-  alert('I am 32 years old');
+    alert(name+ ' Your answer is wrong !');
 }
 
+///////
 
-  let Place =['Capital','Jordan','Amman'];
-  
-  let C=0;
- 
 
-function q7()
+
+ let age=32;
+ let reply6 =Number(prompt('Guess my age ?'));
+
+for (let g = 0; g<3; g++)
+
 {
-  let place =['CAPITAL','JORDAN','AMMAN'];
-  let tryCount = 6;
-
-  let answer7;
-
-  do{
-    answer7=prompt('Guess where I am living');
-    if (answer7===h[0])  {
-   answer7 = prompt('Guess where I am living?\n You try ' + tryCount + '/6');
-
-    if (answer7.toUpperCase() === place[0]) {
-
-      alert(answer7 +'  true');
-      score++;
-      break;
-    }
-    else if (answer7.toUpperCase() === place[1]) {
-      alert(answer7 +' True');
-      score++;
-      break;
-    }
-    else if (answer7.toUpperCase() === place[2]) {
-      alert(answer7 +'  true');
-      score++;
-      break;
+    if (reply6 < age)
+    {
+        alert('too low');
+        reply6=prompt('try again');
     }
 
-    
-    k++;
-  }while( k!==6 );
-  alert('I live in'+h);
-
-
-
-
-    tryCount--;
-
-  }while( tryCount > 0 );
-
-  if(tryCount === 0){
-    alert('I live in ' + place[1] + ' or ' + place[2]);
-  }
+else if (reply6 > age)
+{
+    alert('too high');
+    reply6=prompt('try again');
 }
 
-function questions()
+else if (reply6 === age)
 {
-  q1();
-  q2();
-  q3();
-  q4();
-  q5();
-  q6();
-  q7(); 
-  alert('your score: ' + score +'7');}
-questions();
+    score++;
+    alert('correct answer ');
+   g = 4;
+}
+}
 
+//////////////////////////
+
+let hobbies=['football','travel','music'];
+
+let reply7=prompt('what is my hobbies?s');
+
+for (let i=0; i < hobbies.length; i++) {
+
+
+    if (prompt===hobbies.length)
+
+
+    {
+        score++;
+        alert ('correct answer');
+        break;
+    }
+    
+    
+    else 
+    
+    {
+        alert('wrong answer');
+        reply7=prompt('try again');
+    }
+    
+}
+
+alert (name+' you got '+score+ 'points');
 

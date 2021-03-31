@@ -62,9 +62,9 @@ list {
   width: 320px;
   margin-top: 40px;
 }
-p
+main
 {
-font-size: 150%;
+font-size: 200%;
 text-align: center;
 }
 
@@ -89,4 +89,22 @@ ol {
 
 ol {
   font-size: 1.4rem;
+}
+
+
+body > main > img {
+  color: rgb(238, 238, 238);
+  line-height: 1.6;
+  margin-bottom: 30px;
+  width: 40%;
+  margin-left: 300px;
+}
+
+body > main > div {
+
+  color: rgb(238, 238, 238);
+  line-height: 1.6;
+  font-size: 200%;
+  text-align: center;
+  margin-left: 500px;
 }
